@@ -1,0 +1,281 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Styling for the top navbar */
+
+.top-navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-nav-content p {
+    color: white;
+    font-size: 14px;
+}
+
+
+/* Main Navigation Bar Styling */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 50px;
+    height: 80px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.login-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid yellow;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* Body Section Styling */
+
+.content-wrapper {
+    padding: 40px;
+    text-align: center;
+}
+
+.centered-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subtext-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 40px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subtext {
+    font-size: 24px;
+    color: blue;
+    font-style: italic;
+}
+
+
+/* Image Section Styling */
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.animated-image {
+    width: 50%;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    animation: slide 5s infinite alternate ease-in-out;
+}
+
+
+/* Keyframes for sliding animation */
+
+@keyframes slide {
+    0% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+
+/* Box Container */
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+
+.box {
+    background-color: yellow;
+    padding: 40px;
+    flex: 1;
+    margin: 0 20px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Know More About Us Section */
+
+.know-more-section {
+    padding: 40px;
+    background-color: #f2f2f2;
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.know-more-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.know-more-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+/* Know More About Us Section */
+
+.know-more-section {
+    padding: 40px;
+    background-color: #f2f2f2;
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.know-more-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.know-more-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+/* Footer Section */
+
+.footer {
+    background-color: black;
+    padding: 40px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column ul {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: yellow;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.footer-column p img {
+    vertical-align: middle;
+    margin-right: 10px;
+}

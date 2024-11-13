@@ -1,0 +1,330 @@
+/* General styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Styling for the top navbar */
+
+.top-navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-nav-content p {
+    color: white;
+    font-size: 14px;
+}
+
+
+/* Main Navigation Bar Styling */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 50px;
+    height: 80px;
+}
+
+
+/* Logo styling */
+
+.logo img {
+    height: 60px;
+}
+
+
+/* Centering the links */
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin: 0 20px;
+    /* Space between the buttons */
+}
+
+
+/* Buttons styling */
+
+.nav-button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* Login Button Styling */
+
+.login-btn {
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: yellow;
+}
+
+
+/* Full-Width Image Section */
+
+.image-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.image-container {
+    display: flex;
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    animation: slide 10s infinite linear;
+}
+
+.animated-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Animation for sliding images */
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* About Us Section */
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* What We Offer Section */
+
+.offers-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.offers-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.offer-box {
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.offer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.offer-text {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+    transition: color 0.3s ease
+}
+
+
+/* What Clients Think About Us Section */
+
+.clients-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.clients-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.clients-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    animation: slideRightToLeft 10s infinite linear;
+}
+
+.client-box {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.client-image {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.client-review {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Animation for sliding clients */
+
+@keyframes slideRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Footer Section */
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+/* Quick Links Section */
+
+.quick-links ul {
+    margin: 0;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
