@@ -32,7 +32,7 @@ body {
     background-color: black;
     padding: 20px 50px;
     height: 80px;
-    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .logo img {
@@ -45,25 +45,13 @@ body {
     align-items: center;
     list-style: none;
     flex-grow: 1;
+    flex-wrap: wrap;
     text-align: center;
     margin-left: 20px;
-    flex-wrap: wrap; /* Allow links to wrap if needed */
 }
 
 .nav-links li {
     margin: 0 15px;
-    padding: 5px; /* Add padding to prevent overlap */
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: yellow;
 }
 
 .nav-button {
@@ -238,7 +226,6 @@ body {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .footer-column {
@@ -414,56 +401,27 @@ body {
     .know-more-section h2 {
         font-size: 24px;
     }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        padding: 5px;
-    }
-
-    .nav-links li {
-        margin: 5px 0;
-    }
-
-    .nav-button,
-    .login-btn {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-
-    .image-section {
-        height: 250px;
-    }
-
-    .image-container {
-        width: 200%;
-    }
-
-    .contact-section {
-        margin: 10px;
-        width: 100%;
-    }
-
-    .contact-title {
-        font-size: 24px;
-    }
-
-    .contact-form {
-        padding: 10px;
-    }
 
     .footer-container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
     .footer-column {
-        margin: 10px 0;
+        margin: 15px 0;
         text-align: center;
     }
-
-    .footer-column ul li {
-        font-size: 12px;
-    }
 }
+
+/* For very small screens like mobile phones */
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-subtitle {
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        padding: 8px 

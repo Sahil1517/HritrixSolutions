@@ -1,4 +1,5 @@
 /* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +11,11 @@ body {
     background-color: #f0f0f0;
 }
 
+
 /* Navigation Bar Styling */
 
 /* Styling for the top navbar */
+
 .top-navbar {
     background-color: #333;
     padding: 10px;
@@ -24,7 +27,9 @@ body {
     font-size: 14px;
 }
 
+
 /* Main Navigation Bar Styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -32,7 +37,6 @@ body {
     background-color: black;
     padding: 20px 50px;
     height: 80px;
-    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
 }
 
 .logo img {
@@ -45,25 +49,10 @@ body {
     align-items: center;
     list-style: none;
     flex-grow: 1;
-    text-align: center;
-    margin-left: 20px;
-    flex-wrap: wrap; /* Allow links to wrap if needed */
 }
 
 .nav-links li {
-    margin: 0 15px;
-    padding: 5px; /* Add padding to prevent overlap */
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: yellow;
+    margin: 0 20px;
 }
 
 .nav-button {
@@ -96,11 +85,13 @@ body {
     color: black;
 }
 
+
 /* Full-Width Image Section */
+
 .image-section {
     position: relative;
     width: 100%;
-    height: 400px; /* Reduced the height */
+    height: 500px;
     overflow: hidden;
     margin-top: 20px;
 }
@@ -119,7 +110,9 @@ body {
     object-fit: cover;
 }
 
+
 /* Animation for sliding images */
+
 @keyframes slide {
     0% {
         transform: translateX(0);
@@ -129,7 +122,9 @@ body {
     }
 }
 
+
 /* Contact Section */
+
 .contact-section {
     max-width: 600px;
     margin: 30px auto;
@@ -205,7 +200,9 @@ body {
     animation: fadeIn 1s ease-in;
 }
 
+
 /* Know More About Us Section */
+
 .know-more-section {
     padding: 40px;
     background-color: #f2f2f2;
@@ -228,7 +225,9 @@ body {
     color: #333;
 }
 
+
 /* Footer Section */
+
 .footer {
     background-color: black;
     padding: 40px;
@@ -238,7 +237,6 @@ body {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .footer-column {
@@ -284,7 +282,9 @@ body {
     margin-right: 10px;
 }
 
+
 /* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -296,10 +296,13 @@ body {
     }
 }
 
+
 /* Media Queries for Responsiveness */
 
 /* For tablets and larger mobile screens */
 @media (max-width: 1024px) {
+
+    /* Navbar */
     .navbar {
         flex-direction: column;
         padding: 15px;
@@ -328,15 +331,7 @@ body {
         margin: 20px 0;
     }
 
-    /* Image section */
-    .image-section {
-        height: 350px;
-    }
-
-    .image-container {
-        width: 150%;
-    }
-
+    /* Contact Section */
     .contact-section {
         margin: 20px;
         width: 90%;
@@ -355,6 +350,7 @@ body {
         font-size: 14px;
     }
 
+    /* Know More Section */
     .know-more-section {
         width: 90%;
         padding: 30px;
@@ -367,6 +363,8 @@ body {
 
 /* For smaller mobile screens */
 @media (max-width: 768px) {
+
+    /* Navbar */
     .navbar {
         padding: 10px;
     }
@@ -384,10 +382,7 @@ body {
         margin: 5px 0;
     }
 
-    .image-section {
-        height: 300px;
-    }
-
+    /* Contact Section */
     .contact-section {
         margin: 15px;
         width: 100%;
@@ -406,6 +401,7 @@ body {
         font-size: 14px;
     }
 
+    /* Know More Section */
     .know-more-section {
         width: 100%;
         padding: 20px;
@@ -414,56 +410,52 @@ body {
     .know-more-section h2 {
         font-size: 24px;
     }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin: 15px 0;
+        text-align: center;
+    }
 }
 
+/* For very small screens like mobile phones */
 @media (max-width: 480px) {
-    .navbar {
-        padding: 5px;
-    }
-
-    .nav-links li {
-        margin: 5px 0;
-    }
-
-    .nav-button,
-    .login-btn {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-
-    .image-section {
-        height: 250px;
-    }
-
-    .image-container {
-        width: 200%;
-    }
-
-    .contact-section {
-        margin: 10px;
-        width: 100%;
-    }
 
     .contact-title {
         font-size: 24px;
     }
 
-    .contact-form {
-        padding: 10px;
+    .contact-subtitle {
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        padding: 8px 16px;
+    }
+
+    .input-group input {
+        font-size: 14px;
     }
 
     .footer-container {
         flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
     .footer-column {
         margin: 10px 0;
-        text-align: center;
     }
 
     .footer-column ul li {
-        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .footer-column ul li a {
+        font-size: 14px;
     }
 }

@@ -1,0 +1,133 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.top-navbar, .navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-nav-content p, .nav-button, .login-btn {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Wraps items to prevent overlap */
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-button {
+    border: 2px solid white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.login-btn {
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: yellow;
+}
+
+/* Full-Width Image Section */
+.image-section {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.animated-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .login-btn {
+        display: none; /* Hides the login button on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .nav-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .animated-image {
+        height: 200px;
+    }
+}

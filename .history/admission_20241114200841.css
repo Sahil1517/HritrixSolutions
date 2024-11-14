@@ -1,0 +1,78 @@
+/* Responsive Styling */
+
+/* For tablets and larger mobile screens */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    /* Image Section */
+    .image-container {
+        flex-direction: column;
+    }
+    .animated-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Box Container */
+    .box-container {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+    .box {
+        margin: 20px 0;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    /* General Font Adjustment */
+    body {
+        font-size: 14px;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 10px;
+    }
+    .nav-button, .login-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* Centered Text */
+    .centered-text {
+        font-size: 24px;
+    }
+
+    /* Subtext Box */
+    .subtext-box {
+        padding: 15px;
+    }
+
+    /* Box Container */
+    .box {
+        padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px;
+    }
+}

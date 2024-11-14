@@ -1,0 +1,146 @@
+/* Navigation Bar Styling */
+
+/* Styling for the top navbar */
+.top-navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.top-nav-content p {
+    color: white;
+    font-size: 14px;
+}
+
+/* Main Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 50px;
+    height: 80px;
+    flex-wrap: wrap; /* Ensure links wrap on smaller screens */
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-grow: 1;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    text-align: center;
+    width: 100%;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Reduced margin to ensure space between items */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 5px 10px; /* Added padding to increase clickable area */
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+/* Buttons Styling */
+.nav-button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.login-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid yellow;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and larger mobile screens */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* For smaller mobile screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+}

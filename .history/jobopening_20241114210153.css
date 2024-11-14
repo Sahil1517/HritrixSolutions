@@ -1,4 +1,5 @@
 /* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -32,8 +33,7 @@ body {
     background-color: black;
     padding: 20px 50px;
     height: 80px;
-    flex-wrap: wrap; /* Allows navbar items to wrap on smaller screens */
-    position: relative; /* To position over image without overlap */
+    flex-wrap: wrap; /* Ensure links wrap on smaller screens */
 }
 
 .logo img {
@@ -46,12 +46,13 @@ body {
     align-items: center;
     list-style: none;
     flex-grow: 1;
-    flex-wrap: wrap; /* Ensure links stack on smaller screens */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    text-align: center;
     width: 100%;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 15px; /* Reduced margin to ensure space between items */
 }
 
 .nav-links a {
@@ -59,7 +60,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     transition: all 0.3s ease;
-    padding: 5px 10px;
+    padding: 5px 10px; /* Added padding to increase clickable area */
 }
 
 .nav-links a:hover {
@@ -90,10 +91,6 @@ body {
     border: 2px solid yellow;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 20px;
-    position: absolute; /* Position it to the right of the navbar */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%);
 }
 
 .login-btn:hover {
@@ -121,29 +118,26 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 40px;
-    flex-wrap: wrap; /* Ensure content stacks on small screens */
-    padding: 0 20px; /* Add padding to avoid overlap */
 }
 
 .content-box {
-    width: 48%;
+    width: 50%;
     background-color: yellow;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 .image-box {
-    width: 48%;
+    width: 40%;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .image-box img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .present-opening {
@@ -264,20 +258,16 @@ body {
     background-color: black;
     padding: 40px;
     color: white;
-    text-align: center;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
 .footer-column {
-    flex: 1 1 25%;
+    flex: 1;
     margin: 0 20px;
-    text-align: left;
 }
 
 .footer-column h3 {
@@ -346,19 +336,42 @@ body {
     .nav-links {
         flex-direction: column;
         width: 100%;
-        align-items: center;
     }
 
     .nav-links li {
         margin: 10px 0;
+        text-align: center;
     }
 
-    .login-btn {
-        margin-left: 0;
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-box,
+    .image-box {
         width: 100%;
-        margin-top: 10px;
-        position: relative; /* Adjusts the button on smaller screens */
-        top: 0; /* Center button below navbar */
+    }
+}
+
+/* For smaller mobile screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        text-align: center;
     }
 
     .content-container {
@@ -371,13 +384,33 @@ body {
         width: 100%;
     }
 
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-column {
-        flex: 1 1 100%;
-        margin-bottom: 20px;
+    .job-box {
+        width: 100%;
     }
 }
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .content-box,
+    .image-box {
+        width: 100

@@ -48,6 +48,7 @@ body {
     text-align: center;
     margin-left: 20px;
     flex-wrap: wrap; /* Allow links to wrap if needed */
+    width: 100%; /* Ensure the nav links span full width */
 }
 
 .nav-links li {
@@ -312,10 +313,13 @@ body {
     .nav-links {
         flex-direction: column;
         align-items: center;
+        width: 100%; /* Ensure the nav links take up full width */
     }
 
     .nav-links li {
         margin: 10px 0;
+        width: 100%; /* Ensure links are centered and don't overlap */
+        text-align: center;
     }
 
     .footer-container {
@@ -408,14 +412,11 @@ body {
 
     .know-more-section {
         width: 100%;
-        padding: 20px;
-    }
-
-    .know-more-section h2 {
-        font-size: 24px;
+        padding: 25px;
     }
 }
 
+/* For very small screens */
 @media (max-width: 480px) {
     .navbar {
         padding: 5px;

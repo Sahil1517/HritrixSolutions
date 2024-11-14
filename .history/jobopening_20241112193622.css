@@ -1,4 +1,5 @@
 /* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +11,12 @@ body {
     background-color: #f0f0f0;
 }
 
+
 /* Navigation Bar Styling */
 
+
 /* Styling for the top navbar */
+
 .top-navbar {
     background-color: #333;
     padding: 10px;
@@ -24,7 +28,9 @@ body {
     font-size: 14px;
 }
 
+
 /* Main Navigation Bar Styling */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -32,8 +38,6 @@ body {
     background-color: black;
     padding: 20px 50px;
     height: 80px;
-    flex-wrap: wrap; /* Allows navbar items to wrap on smaller screens */
-    position: relative; /* To position over image without overlap */
 }
 
 .logo img {
@@ -46,27 +50,12 @@ body {
     align-items: center;
     list-style: none;
     flex-grow: 1;
-    flex-wrap: wrap; /* Ensure links stack on smaller screens */
-    width: 100%;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    padding: 5px 10px;
-}
-
-.nav-links a:hover {
-    color: yellow;
-}
-
-/* Buttons Styling */
 .nav-button {
     color: white;
     background-color: transparent;
@@ -90,10 +79,6 @@ body {
     border: 2px solid yellow;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 20px;
-    position: absolute; /* Position it to the right of the navbar */
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%);
 }
 
 .login-btn:hover {
@@ -101,7 +86,9 @@ body {
     color: black;
 }
 
+
 /* Jobs and Careers Section */
+
 .jobs-careers {
     padding: 50px;
     text-align: center;
@@ -115,35 +102,34 @@ body {
     font-family: 'Cursive';
 }
 
+
 /* Layout for content and image */
+
 .content-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 40px;
-    flex-wrap: wrap; /* Ensure content stacks on small screens */
-    padding: 0 20px; /* Add padding to avoid overlap */
 }
 
 .content-box {
-    width: 48%;
+    width: 50%;
     background-color: yellow;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 .image-box {
-    width: 48%;
+    width: 40%;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .image-box img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .present-opening {
@@ -152,7 +138,9 @@ body {
     margin-bottom: 20px;
 }
 
+
 /* Job openings styling */
+
 .job-openings {
     display: flex;
     flex-direction: column;
@@ -179,7 +167,9 @@ body {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Modal Styling (If used for login) */
+
 .modal {
     display: none;
     position: fixed;
@@ -236,7 +226,9 @@ body {
     color: black;
 }
 
+
 /* Know More About Us Section */
+
 .know-more-section {
     padding: 40px;
     background-color: #f2f2f2;
@@ -259,25 +251,23 @@ body {
     color: #333;
 }
 
+
 /* Footer Section */
+
 .footer {
     background-color: black;
     padding: 40px;
     color: white;
-    text-align: center;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
 .footer-column {
-    flex: 1 1 25%;
+    flex: 1;
     margin: 0 20px;
-    text-align: left;
 }
 
 .footer-column h3 {
@@ -316,68 +306,4 @@ body {
 .footer-column p img {
     vertical-align: middle;
     margin-right: 10px;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Media Queries for Responsiveness */
-
-/* For tablets and larger mobile screens */
-@media (max-width: 1024px) {
-    .navbar {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .logo img {
-        height: 50px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .login-btn {
-        margin-left: 0;
-        width: 100%;
-        margin-top: 10px;
-        position: relative; /* Adjusts the button on smaller screens */
-        top: 0; /* Center button below navbar */
-    }
-
-    .content-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .content-box,
-    .image-box {
-        width: 100%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-column {
-        flex: 1 1 100%;
-        margin-bottom: 20px;
-    }
 }
